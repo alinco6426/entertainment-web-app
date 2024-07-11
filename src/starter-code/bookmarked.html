@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Entertainment web app</title>
+</head>
+<body>
+
+  
+  
+<div class="main-container">
+
+    <section class="nav-bar-container">
+      <nav>
+        <section class="logo-container">
+          <img src="logo.svg" alt="logo">
+        </section>
+        <section class="navLinkProfileImageWrapper">
+    
+          <div class="nav-link-container">
+            <a href="index.html" class="nav-link navLink homeNav"><img src="icon-nav-home.svg" alt="icon-nav-home"></a>
+            <a href="movies.html" class="nav-link navLink MoviesNav"><img src="icon-nav-movies.svg"alt="icon-nav-movies"></a>
+            <a href="tv-series.html" class="nav-link navLink TvSeriesNav"><img src="icon-nav-tv-series.svg"alt="icon-nav-tv-series"></a>
+            <a href="bookmarked.html" class="nav-link navLink BookmarkedNav"><img src="icon-nav-bookmark.svg"alt="icon-nav-bookmark"></a>
+          </div>
+    
+          <div class="profile-image-displayer">
+            <label for="profile-changer" class="profiler">
+              <span class="profile-span"><img src="image-avatar.png" alt="image-avatar" class="profile-image"
+                  id="profile-image"></span>
+              <input type="file" id="profile-changer" class="profile-changer">
+            </label>
+          </div>
+    
+        </section>
+      </nav>
+    </section>
+
+  <section class="main-movie-container">
+
+    <div class="search-bar">
+      <img src="icon-search.svg" alt="icon-search" class="search-logo">
+      <input type="search" id="search-movie-bar" class="search-input" placeholder="Search for movies or TV series">
+    </div>
+
+    <div class="movie-section">
+      <h1 class="heading bookMarkMovieHeading">Bookmarked Movies</h1>
+      <section class="bookMarkedMovieDisplayer movieDisplayer"></section>
+      
+      <h1 class="heading bookMarkTvSeries">Bookmarked TV Series</h1>
+      <section class="bookMarkedTvSeriesDisplayer movieDisplayer"></section>
+    </div>
+
+  </section>
+
+</div>
+
+
+<script type="module" src="bookmarked.js"></script>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+:root {
+     --color-background: hsl(223, 30%, 9%);
+     --nav-background: hsl(223, 36%, 14%);
+     --color-heading: hsl(223, 23%, 46%);
+     --text-white-soft: hsl(0, 0%, 100%);
+     --opaque-white : hsla(0, 0%, 100%, 0.644);
+     --orange: hsl(0, 97%, 63%);
+     --bookmark-background: hsla(223, 30%, 9%, 0.493);
+     --play-button-container-background: hsla(240, 7%, 3%, 0.722);
+     --play-button-background: hsla(210, 20%, 98%, 0.173);}
+
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-weight: normal;
+}
+
+body{
+     background-color: var(--color-background);
+     font-family: "outfit";
+     -moz-user-select: none;
+     -webkit-user-select: none;
+     user-select: none;
+}
+
+* button {
+     border: none;
+     outline: none;
+     background-color: transparent;
+     cursor: pointer;
+     font-family: "outfit";
+}
+* input {
+     border: none;
+     outline: none;
+     font-family: "outfit";
+}
+ * h1{
+     color: var(--text-white-soft);
+     font-size: 30px;
+     /* margin-left: 20px; */
+     margin: 40px 0;
+ }
